@@ -1,3 +1,11 @@
+/*
+*   Filename: linkedLists.cpp
+*   Name: Huthsady Legend Boun
+*   Professor: Grace A. Comp
+*   Date: April 21 2025
+*   Brief Description: Demonstrates the ability to create and manipulate linked lists. This particular program demonstrates that through a race.
+*/
+
 #include <iostream>
 #include <string>
 
@@ -75,7 +83,7 @@ public:
       return;
     }
     
-    Node *current = head;       // Current pointer used for checking against a node.
+    Node *current = head;       // Current pointer - used for checking against a node.
     int i = 2;
     while(current != nullptr && i < p_nodePosition) // Iterates through the nodes, adding 1 to i for every loop. Once we get to proper position, it stops.
     {
@@ -99,23 +107,23 @@ public:
   {
     Node *current = head;
 
-    if(head == nullptr)
+    if(head == nullptr)             // Checks if there is even a node existing
     {
       std::cout << "DEBUG: Delete: No nodes available for deletion.\n";
       return;
     }
-    if(p_nodePosition == 1)
+    if(p_nodePosition == 1)             // Checks to see if we want to delete the head.
     {
       delete current;
       return;
     }
     int i = 2;
-    while(current != nullptr && i < p_nodePosition)
+    while(current != nullptr && i < p_nodePosition)             // Checks if we've gone OoB in two ways. Also moves the current forward. 
     {
       current = current->next;
       i++;
     }
-    if(current == nullptr)
+    if(current == nullptr)          // Checks if the user input a position larger than the amount of racers.
     {
       std::cout << "DEBUG: Delete: Position chosen out of bounds\n";
       return;

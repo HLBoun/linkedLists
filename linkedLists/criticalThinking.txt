@@ -1,0 +1,38 @@
+Name: Huthsady Legend Boun
+Professor: Grace Comp
+Class: CISP-1020-S01
+
+* Sorry for being late AND missing class, I have been going through a breakup. Not an excuse at all, just an apology. * 
+* I did not understand linked lists, so this became a code as you learn kind of think *
+* Linked lists are something I was told I would probably never need/should use. So I skipped it when I was young *
+* I made the insert and delNode functions on my own, based off of the destructor and the append function 
+  studied from websites like geeksforgeeks.org or stackoverflow or cplusplus.com*
+
+
+First Thoughts (after looking at the websites listed above):
+  
+  So the first thing I noticed was that a linked list was basically a bunch of class objects linked together
+by pointers. That seems pretty easy. My first thought was to just have one single "class Node" and just build
+the nodes off of that. One of the websites quickly told me that becomes a headache and it is better to join 
+the two classes together (because of the extra layer of pointers/mem mgmt.) I just went for it really. Tried
+to make that one Node class and it worked, technically. Then when the calculations came in, like inserting,
+I completely backtracked and made another class called linkedList. I have tons of exp with iterating over
+a data set and plucking or inserting stuff in, but with linked lists i noticed a couple of things. Like, 
+accessing data had to be preemptive since we are moving left to right. Also, that there was no "previous data"
+unless manually made. You could not just "-1" from the iterator. It was really rough, but by the end, I think
+I understood it extremely well. There are tons of comments on my code, to show my understanding
+
+
+What I learned Mostly:
+
+  Lots and lots of "this->" or "current->next", didnt understand it before, but I sure do now. (specifies members)
+  
+  Linked Lists in general
+
+  cannot do current->next->next--it throws errors, at the very least. Something about "dereferencing pointer"
+
+  a SINGLE LinkedList object can 'generate' as many Node objects as it wants. This is the basis of the list.
+
+  using stuff like p_parameter or m_member makes code WAYYY easier to read.
+
+
